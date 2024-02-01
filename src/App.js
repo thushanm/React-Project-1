@@ -12,21 +12,21 @@ function App() {
         id:'001',
         title:'mazda',
         amount:'$456.96',
-        date:'2024.01.31',
+        date:new Date(2024, 7 , 8),
 
 
     },{
         id:'002',
         title:'Benz',
         amount:'$524.36',
-        date:'2024.01.31',
+        date:new Date(2024, 3 , 8),
 
 
     },{
         id:'003',
         title:'BMW',
         amount:'$668.6',
-        date:'2024.01.31',
+        date:new Date(2024, 1 , 8),
 
 
     }]
@@ -34,11 +34,9 @@ function App() {
   return (
     <div className="App">
 
-
         <ExpenseItem  title={data[0].title} amount={data[0].amount} date={data[0].date}></ExpenseItem>
         <ExpenseItem  title={data[1].title} amount={data[1].amount} date={data[1].date}></ExpenseItem>
         <ExpenseItem  title={data[2].title} amount={data[2].amount} date={data[2].date}></ExpenseItem>
-
 
 
     </div>
