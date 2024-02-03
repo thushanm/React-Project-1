@@ -1,8 +1,8 @@
 import './output.css';
 import './index.css';
 import './App.css';
-import './components/Expense.css'
-import {ExpenseItem} from "./components/ExpenseItem";
+import './components/Expenses/ExpenseItem.css'
+import {Expenses} from "./components/Expenses/Expenses";
 
 function App() {
 
@@ -34,9 +34,7 @@ function App() {
   return (
     <div className="App">
 
-        <ExpenseItem  title={data[0].title} amount={data[0].amount} date={data[0].date}></ExpenseItem>
-        <ExpenseItem  title={data[1].title} amount={data[1].amount} date={data[1].date}></ExpenseItem>
-        <ExpenseItem  title={data[2].title} amount={data[2].amount} date={data[2].date}></ExpenseItem>
+        <Expenses items={data}/>
 
 
     </div>
