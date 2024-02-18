@@ -3,6 +3,7 @@ import './index.css';
 import './App.css';
 import './components/Expenses/ExpenseItem.css'
 import {Expenses} from "./components/Expenses/Expenses";
+import {NewExpense} from "./components/newExpenses/NewExpense";
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-
+<NewExpense/>
         <Expenses items={data}/>
 
 
